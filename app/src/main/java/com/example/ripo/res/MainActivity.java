@@ -1,5 +1,6 @@
 package com.example.ripo.res;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -17,6 +18,8 @@ Button button;
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Intent intent=new Intent(MainActivity.this,Calender.class);
+                startActivity(intent);
                 Toast.makeText(getApplicationContext(),"Hello World",Toast.LENGTH_SHORT).show();
             }
         });
